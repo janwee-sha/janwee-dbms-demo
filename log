@@ -1,0 +1,37 @@
+2020-07-21 16:06:32.916  INFO 3380 --- [main] com.janwee.JanweeDbmsDemoApplication     : The following profiles are active: mysql
+2020-07-21 16:06:33.888  INFO 3380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-21 16:06:33.949  INFO 3380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 1 JPA repository interfaces.
+2020-07-21 16:06:34.119  INFO 3380 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bb499e37-c27f-3e8d-94e7-f75cd0324538
+2020-07-21 16:06:34.444  INFO 3380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7190 (http)
+2020-07-21 16:06:34.452  INFO 3380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-21 16:06:34.453  INFO 3380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 16:06:34.596  INFO 3380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-21 16:06:34.597  INFO 3380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1663 ms
+2020-07-21 16:06:34.776  INFO 3380 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-07-21 16:06:34.876  INFO 3380 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-07-21 16:06:34.964  INFO 3380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 16:06:42.172  INFO 3380 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-21 16:06:42.215  INFO 3380 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-21 16:06:42.344  INFO 3380 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-21 16:06:42.435  INFO 3380 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-07-21 16:06:42.936  INFO 3380 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-21 16:06:42.945  INFO 3380 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-21 16:06:43.248  WARN 3380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-21 16:06:43.450  INFO 3380 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-21 16:06:43.535  INFO 3380 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-21 16:06:44.012  INFO 3380 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fd7b79, org.springframework.security.web.context.SecurityContextPersistenceFilter@44d43cc9, org.springframework.security.web.header.HeaderWriterFilter@1f172892, org.springframework.security.web.authentication.logout.LogoutFilter@5ed31735, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7b7068d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@656ec00d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5dc7841c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5103eea2, org.springframework.security.web.session.SessionManagementFilter@59e082f8, org.springframework.security.web.access.ExceptionTranslationFilter@719c1faf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17b6ad97]
+2020-07-21 16:06:45.535  INFO 3380 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-07-21 16:06:45.555  WARN 3380 --- [main] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-07-21 16:06:45.642  INFO 3380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7190 (http) with context path ''
+2020-07-21 16:06:47.179  INFO 3380 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-07-21 16:06:47.180  INFO 3380 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-21 16:06:47.208  INFO 3380 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-21 16:06:47.254  INFO 3380 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-21 16:06:47.570  INFO 3380 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-07-21 16:06:47.572  INFO 3380 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-07-21 16:06:47.582  INFO 3380 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-21 16:06:47.583  INFO 3380 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-21 16:06:47.594  INFO 3380 --- [main] com.janwee.JanweeDbmsDemoApplication     : Started JanweeDbmsDemoApplication in 18.53 seconds (JVM running for 19.639)
+2020-07-21 16:06:48.790  INFO 3380 --- [RMI TCP Connection(5)-192.168.43.148] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 16:06:48.791  INFO 3380 --- [RMI TCP Connection(5)-192.168.43.148] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-21 16:06:48.799  INFO 3380 --- [RMI TCP Connection(5)-192.168.43.148] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms

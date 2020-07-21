@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: janwee-dbms-demo
+  profiles:
+    include: mysql
+  jpa: 
+    show-sql: true
+    hibernate: 
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+  security:
+    user:
+      name: janwee
+      password: caecaodb
+server:
+  port: 7190
+database:
+  ip: 192.168.245.128
+  db: dbms_demo
+logging:
+  file:
+    clean-history-on-start: true
+    path: ${spring.application.name}/log
+    name: log
+---
+spring:
+  profiles: mysql
+  jpa:
+    properties: 
+      hibernate: 
+        dialect: org.hibernate.dialect.MySQLDialect
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${database.ip:192.168.245.128}:3306/${database.db:dbms_demo}?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    username: dbo
+    password: caecaodb
+---
+spring:
+  profiles: oracle
+  jpa:
+    properties: 
+      hibernate: 
+        dialect: org.hibernate.dialect.Oracle10gDialect
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@${database.ip:192.168.245.128}:1521/${database.db:dbms_demo}
+    username: janwee
+    password: caecaodb

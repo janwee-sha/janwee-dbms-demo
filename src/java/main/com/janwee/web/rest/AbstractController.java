@@ -15,8 +15,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.janwee.entity.AbstractEntity;
-import com.janwee.exception.BadRequestException;
-import com.janwee.service.AbstractService;
 
 public abstract class AbstractController<T extends AbstractEntity<ID>, ID> {
 	@Autowired
