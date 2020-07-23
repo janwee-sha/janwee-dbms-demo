@@ -111,7 +111,7 @@
             <version>12.1.0.1-atlassian-hosted</version>
         </dependency>
 
-        <!--达梦JDBC驱动-->
+        <!--达梦 DaMeng JDBC驱动-->
         <dependency>
             <groupId>com.dameng</groupId>
             <artifactId>dameng-jdbc-driver</artifactId>
@@ -124,6 +124,20 @@
             <artifactId>dameng-dialect-4-hibernate5</artifactId>
             <scope>system</scope>
             <systemPath>${project.basedir}/src/main/resources/lib/DmDialect-for-hibernate5.3.jar</systemPath>
+        </dependency>
+        <!--金仓KingBase JDBC驱动-->
+        <dependency>
+            <groupId>com.kingbase8</groupId>
+            <artifactId>kingbase-jdbc-driver</artifactId>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/kingbase8-8.2.0.jar</systemPath>
+        </dependency>
+        <!--金仓KingBase Hibernate方言-->
+        <dependency>
+            <groupId>com.kingbase8</groupId>
+            <artifactId>kingbase8-dialect-4-hibernate5</artifactId>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/hibernate-5.4.6.Finaldialect.jar</systemPath>
         </dependency>
     </dependencies>
 

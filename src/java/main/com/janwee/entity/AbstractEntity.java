@@ -20,6 +20,6 @@ import org.hibernate.id.enhanced.SequenceStyleGenerator;
 public abstract class AbstractEntity<ID> implements Serializable {
 	private static final long serialVersionUID = 2624230147492510657L;
 	@Id
-	@GeneratedValue(generator = "JJD_ID_GENERATOR")
+	@GeneratedValue(generator = "JDD_ID_GENERATOR")
 	private ID id;
 }

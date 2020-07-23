@@ -2,7 +2,7 @@ spring:
   application:
     name: janwee-dbms-demo
   profiles:
-    include: mysql
+    include: kingbase
   jpa: 
     show-sql: true
     hibernate: 
@@ -60,3 +60,15 @@ spring:
     url: jdbc:dm://172.30.1.196:5236
     username: BENCHMARKSQL
     password: 123456789
+---
+spring:
+  profiles: kingbase
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Kingbase8Dialect
+  datasource:
+    driver-class-name: com.kingbase8.Driver
+    url: jdbc:kingbase8://172.30.1.198:54321/benchmarksql
+    username: benchmarksql
+    password: 123456

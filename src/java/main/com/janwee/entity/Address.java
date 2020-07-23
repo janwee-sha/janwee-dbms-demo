@@ -18,8 +18,8 @@ import org.hibernate.id.enhanced.SequenceStyleGenerator;
 @EqualsAndHashCode(callSuper = false)
 @NoArgsConstructor
 @AllArgsConstructor
-@GenericGenerator(name="JJD_ID_GENERATOR",strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator", parameters = {
-		@Parameter(name= SequenceStyleGenerator.SEQUENCE_PARAM,value ="SEQ_JJD")
+@GenericGenerator(name="JDD_ID_GENERATOR",strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator", parameters = {
+		@Parameter(name= SequenceStyleGenerator.SEQUENCE_PARAM,value ="SEQ_JDD")
 })
 public class Address extends AbstractEntity<Long> {
 	private static final long serialVersionUID = 6445736888279260756L;

@@ -7,3 +7,9 @@ CREATE TABLE `dbms_demo`.`jdd_address`  (
   `name` varchar(128) NULL COMMENT '名称',
   PRIMARY KEY (`id`)
 );
+
+CREATE TABLE `dbms_demo`.`seq_jjd`  (
+  `next_val` bigint(20) NULL DEFAULT NULL
+);
+
+INSERT INTO `dbms_demo`.`seq_jjd`(next_val) VALUES(1);
