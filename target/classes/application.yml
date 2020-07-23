@@ -2,7 +2,7 @@ spring:
   application:
     name: janwee-dbms-demo
   profiles:
-    include: mysql
+    include: dameng
   jpa: 
     show-sql: true
     hibernate: 
@@ -48,3 +48,15 @@ spring:
     url: jdbc:oracle:thin:@${database.ip:192.168.245.128}:1521/${database.db:dbms_demo}
     username: janwee
     password: caecaodb
+---
+spring:
+  profiles: dameng
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.DmDialect
+  datasource:
+    driver-class-name: dm.jdbc.driver.DmDriver
+    url: jdbc:dm://172.30.1.196:5236
+    username: BENCHMARKSQL
+    password: 123456789

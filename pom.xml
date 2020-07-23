@@ -110,6 +110,21 @@
             <artifactId>ojdbc6</artifactId>
             <version>12.1.0.1-atlassian-hosted</version>
         </dependency>
+
+        <!--达梦JDBC驱动-->
+        <dependency>
+            <groupId>com.dameng</groupId>
+            <artifactId>dameng-jdbc-driver</artifactId>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/DmJdbcDriver.jar</systemPath>
+        </dependency>
+        <!--达梦Hibernate方言-->
+        <dependency>
+            <groupId>com.dameng</groupId>
+            <artifactId>dameng-dialect-4-hibernate5</artifactId>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/DmDialect-for-hibernate5.3.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
