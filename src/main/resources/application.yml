@@ -2,7 +2,7 @@ spring:
   application:
     name: janwee-dbms-demo
   profiles:
-    include: dameng
+    include: mysql
   jpa: 
     show-sql: true
     hibernate: 
