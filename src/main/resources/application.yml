@@ -2,7 +2,7 @@ spring:
   application:
     name: janwee-dbms-demo
   profiles:
-    include: kingbase
+    include: dameng
   jpa: 
     show-sql: true
     hibernate: 
@@ -72,3 +72,16 @@ spring:
     url: jdbc:kingbase8://172.30.1.198:54321/benchmarksql
     username: benchmarksql
     password: 123456
+---
+spring:
+  profiles: shentong
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OscarDialect
+  datasource:
+    driver-class-name: com.oscar.Driver
+    url: jdbc:oscar://172.30.1.195:2003/OSRDB
+    username: SYSDBA
+    password: szoscar55
+

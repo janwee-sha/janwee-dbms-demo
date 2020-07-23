@@ -139,6 +139,20 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/src/main/resources/lib/hibernate-5.4.6.Finaldialect.jar</systemPath>
         </dependency>
+        <!--神通JDBC驱动-->
+        <dependency>
+            <groupId>com.shentongdata</groupId>
+            <artifactId>shentong-jdbc-driver</artifactId>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/oscarJDBC.jar</systemPath>
+        </dependency>
+        <!--神通Hibernate驱动-->
+        <dependency>
+            <groupId>com.shentongdata</groupId>
+            <artifactId>shentong-dialect-4-hibernate5</artifactId>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/oscarHibernate54.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
