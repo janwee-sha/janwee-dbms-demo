@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.http.HttpMethod;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -26,5 +27,13 @@ public class AddressControllerTest {
     public void testCreate(){
         assertThat(template.postForEntity("/addresses", new Address("测试新增地址实体"),Address.class)
                 .getStatusCode().is2xxSuccessful());
+    }
+    @Test
+    public void testDeleteById(){
+        assertThat(template.exchange("/addresses/{id}", HttpMethod.DELETE,null,Void.class,1)
+                .getStatusCode().is2xxSuccessful());
+    }
+    @Test
+    public void testUpdate(){
     }
 }
