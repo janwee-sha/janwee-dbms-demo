@@ -2,7 +2,7 @@ spring:
   application:
     name: janwee-dbms-demo
   profiles:
-    include: shentong
+    include: mysql
   jpa: 
     show-sql: true
     hibernate: 
@@ -13,11 +13,11 @@ spring:
   security:
     user:
       name: janwee
-      password: caecaodb
+      password: janwee
 server:
   port: 7190
 database:
-  ip: 192.168.245.128
+  ip: 192.168.136.133
   db: dbms_demo
 logging:
   file:
@@ -33,9 +33,9 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${database.ip:192.168.245.128}:3306/${database.db:dbms_demo}?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
-    username: dbo
-    password: caecaodb
+    url: jdbc:mysql://${database.ip:192.168.136.133}:3306/${database.db:dbms_demo}?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    username: janwee
+    password: janwee
 ---
 spring:
   profiles: oracle

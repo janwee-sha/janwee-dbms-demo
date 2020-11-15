@@ -1,20 +1,13 @@
 package com.janwee.web.rest;
 
-import java.lang.reflect.ParameterizedType;
-import java.util.List;
-
+import com.janwee.entity.AbstractEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
-import com.janwee.entity.AbstractEntity;
+import java.lang.reflect.ParameterizedType;
+import java.util.List;
 
 public abstract class AbstractController<T extends AbstractEntity<ID>, ID> {
 	@Autowired
@@ -58,6 +51,6 @@ public abstract class AbstractController<T extends AbstractEntity<ID>, ID> {
 	@ResponseBody
 	@GetMapping("/{id}")
 	public T readById(@PathVariable(value = "id") ID id) {
-		return jpaRepo.findById(id).get();
+		return jpaRepo.findById(id).orElse(null);
 	}
 }

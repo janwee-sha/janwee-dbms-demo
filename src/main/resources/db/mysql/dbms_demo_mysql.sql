@@ -8,8 +8,8 @@ CREATE TABLE `dbms_demo`.`jdd_address`  (
   PRIMARY KEY (`id`)
 );
 
-CREATE TABLE `dbms_demo`.`seq_jjd`  (
+CREATE TABLE `dbms_demo`.`seq_jdd`  (
   `next_val` bigint(20) NULL DEFAULT NULL
 );
 
-INSERT INTO `dbms_demo`.`seq_jjd`(next_val) VALUES(1);
+INSERT INTO `dbms_demo`.`seq_jdd`(next_val) VALUES(1);
